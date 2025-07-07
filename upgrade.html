@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aurem Pro Upgrade</title>
+  <link rel="stylesheet" href="upgrade.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+  <header>
+    <h1>Upgrade to Aurem Pro</h1>
+    <p class="punchline">“Ascend the Market. Unlock the Edge.”</p>
+  </header>
+
+  <main>
+    <section class="benefits">
+      <h2>Why Go Pro?</h2>
+      <ul>
+        <li>⚡ Real-Time Market Data</li>
+        <li>📊 Advanced Charting Tools</li>
+        <li>💼 Priority Portfolio Tracking</li>
+        <li>🧠 Exclusive Learning Modules</li>
+        <li>🛡️ Sentiment Analyzer Access</li>
+        <li>🧩 AI-Based Forecast Insights</li>
+      </ul>
+    </section>
+
+    <section class="plans">
+      <h2>Choose Your Plan</h2>
+      <div class="plan-box">
+        <h3>Starter</h3>
+        <p>Free forever</p>
+        <ul>
+          <li>Basic Market Access</li>
+          <li>Community Support</li>
+        </ul>
+        <button disabled>Current Plan</button>
+      </div>
+
+      <div class="plan-box highlight">
+        <h3>Pro</h3>
+        <p>$9.99/month</p>
+        <ul>
+          <li>All Starter Features</li>
+          <li>Live Tracking Tools</li>
+          <li>Pro Learning Zone</li>
+        </ul>
+        <button onclick="upgradePro()">Upgrade Now</button>
+      </div>
+    </section>
+    <canvas id="portfolioChart" width="400" height="200"></canvas>
+    <p id="portfolioMessage" class="quote-box">"Welcome to Aurem Pro."</p> 
+    <div class="nav-buttons">
+      <a href="portfolio.html">← Back to Portfolio</a>
+      <a href="settings.html">Settings →</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Aurem. All rights reserved.</p>
+  </footer>
+
+  <script src="upgrade.js"></script>
+</body>
+</html> 

@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.stocks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stock {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #e8f5e9;
+  border-radius: 6px;
+}
+
+.stock-name {
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+  color: #2e7d32;
+}

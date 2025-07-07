@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurem — Enter the Realm</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style/index.css" />
+
+  <!-- Main Script -->
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+
+  <div class="hero-container">
+    <div class="hero-content">
+      <img src="aurem-logo.jpeg" alt="Aurem Logo" />
+      <h1 id="greetingText" class="welcome-title">You have been chosen as a trader.</h1>
+      <p id="destinyLine" class="welcome-subtitle">Do you accept your destiny?</p>
+
+      <div class="button-group">
+        <button id="yes-btn" class="btn btn-success">Yes</button>
+        <button id="no-btn" class="btn btn-danger">No</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="goodbyeModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center">
+        <div class="modal-body">
+          <h5>Farewell, Trader.</h5>
+          <p>Return when you are ready to wield the market.</p>
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (for modal support) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

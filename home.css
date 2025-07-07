@@ -1,0 +1,195 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; /* Changed to Inter for consistency */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #202020;  /* Dark background */
+  color: #00ffd1;             /* Bright greenish text */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;    /* Center links like your example */
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 255, 209, 0.2);
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffd1;             /* Bright green */
+}
+
+.navbar .nav-links a {
+  color: #00ffd1;             /* Bright green links */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.navbar .nav-links a.active,
+.navbar .nav-links a:hover {
+  background-color: #00ffd1;
+  color: #000;
+  border-bottom: none;       /* Remove border bottom */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, #121212, #1a1a1a);
+  color: #00ffd1;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00ffd1;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.cta-button {
+  background-color: #00ffd1;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #00c8b7;
+  color: #000;
+}
+
+/* Market Overview */
+.market-overview {
+  padding: 2rem 1rem;
+  background-color: #202020;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,255,209,0.1);
+  color: #f0f0f0;
+}
+
+.market-overview h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #00ffd1;
+}
+
+.market-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.market-card {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,255,209,0.1);
+  color: #f0f0f0;
+}
+
+.positive {
+  color: #4caf50;
+}
+
+.negative {
+  color: #f44336;
+}
+
+.see-more-link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #4caf50;
+}
+
+/* Portfolio Overview */
+.portfolio-overview {
+  padding: 2rem 1rem;
+  background-color: #202020;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,255,209,0.1);
+  color: #f0f0f0;
+}
+
+.portfolio-overview h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #00ffd1;
+}
+
+.portfolio-card {
+  background-color: #121212;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,255,209,0.1);
+  color: #f0f0f0;
+}
+
+.view-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #4caf50;
+}
+
+/* News Preview */
+.news-preview {
+  padding: 2rem 1rem;
+  background-color: #202020;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,255,209,0.1);
+  color: #f0f0f0;
+}
+
+.news-preview h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #00ffd1;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.news-card {
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0,255,209,0.1);
+  color: #f0f0f0;
+}
+
+footer {
+  background-color: #202020;
+  color: #888;
+  text-align: center;
+  padding: 1rem;
+}

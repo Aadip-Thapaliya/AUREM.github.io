@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Track your real-time stock performance and smart portfolio insights with Aurem." />
+  <title>Portfolio – Aurem</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="market.html">Market</a>
+    <a href="news.html">News</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+
+  <header class="portfolio-header">
+    <h1>Your Portfolio</h1>
+    <p id="portfolioMessage">“Your capital reflects your confidence.”</p>
+  </header>
+
+  <main>
+    <section class="portfolio-summary">
+      <h2>Overall Performance</h2>
+      <canvas id="portfolioChart" width="400" height="200" aria-label="Portfolio Performance Chart" role="img"></canvas>
+    </section>
+
+    <section class="holdings-snapshot">
+      <h3>Holdings Snapshot</h3>
+      <ul id="holdingsList">
+        <li>
+          🍏 Apple (AAPL) – 12 Shares – 
+          <span class="price" data-amount="3200">Loading...</span>
+        </li>
+        <li>
+          📦 Amazon (AMZN) – 5 Shares – 
+          <span class="price" data-amount="1800">Loading...</span>
+        </li>
+        <li>
+          🔍 Google (GOOGL) – 3 Shares – 
+          <span class="price" data-amount="2400">Loading...</span>
+        </li>
+        <li>
+          ⚡ Tesla (TSLA) – 7 Shares – 
+          <span class="price" data-amount="1050">Loading...</span>
+        </li>
+      </ul>
+    </section>
+
+    <div class="nav-buttons">
+      <a class="nav-btn" href="market.html">
+        ← Back to Market
+      </a>
+      <a class="nav-btn" href="upgrade.html">
+        Upgrade to Pro →
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Aurem. All rights reserved.</p>
+  </footer>
+
+  <script src="currency.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>

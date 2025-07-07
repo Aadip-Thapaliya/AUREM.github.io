@@ -1,0 +1,182 @@
+/* === Base Reset and Font === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Navbar === */
+nav.navbar {
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,255,209,0.2);
+}
+
+nav.navbar a {
+  text-decoration: none;
+  color: #00ffd1;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav.navbar a:hover {
+  background-color: #00ffd1;
+  color: #000;
+}
+
+/* === Header === */
+header {
+  background-color: #00c4b4;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #00aa99;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* === Main Content === */
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* === Settings Item === */
+.setting-item {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.setting-item label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.setting-item input[type="text"],
+.setting-item select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  background-color: #fff;
+  color: #333;
+}
+
+.setting-item input[type="text"]:focus,
+.setting-item select:focus {
+  border-color: #00c4b4;
+  outline: none;
+}
+
+.setting-item button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00c4b4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.setting-item button:hover {
+  background-color: #009c8a;
+}
+
+/* === Footer === */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #00c4b4;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #00aa99;
+  transition: background-color 0.3s;
+}
+
+footer a:hover {
+  background-color: #008477;
+}
+
+/* === Dark Mode === */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+  background-color: #222;
+}
+
+body.dark-mode .navbar a {
+  color: #00ffcc;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+  border-bottom-color: #00ffcc;
+}
+
+body.dark-mode .setting-item {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .setting-item input[type="text"],
+body.dark-mode .setting-item select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode .setting-item button {
+  background-color: #00ffcc;
+  color: #000;
+}
+
+body.dark-mode footer {
+  background-color: #222;
+}
+
+body.dark-mode footer a {
+  background-color: #00ffcc;
+  color: #000;
+}

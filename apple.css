@@ -1,0 +1,77 @@
+body {
+  background-color: #000;
+  color: #00ffd1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #111;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #00ffd1;
+  font-weight: bold;
+}
+
+.stock-details-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffd1;
+}
+
+.stock-details-container h1 {
+  margin-bottom: 10px;
+}
+
+.description {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.stock-meta {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#price {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#change.positive {
+  color: #4caf50;
+}
+
+#change.negative {
+  color: #f44336;
+}
+
+.chart-buttons {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.chart-buttons button {
+  background: transparent;
+  border: 1px solid #00ffd1;
+  color: #00ffd1;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.chart-buttons button:hover,
+.chart-buttons button.active {
+  background-color: #00ffd1;
+  color: #000;
+}

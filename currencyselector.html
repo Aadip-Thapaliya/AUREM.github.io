@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Selector</title>
+  <link rel="stylesheet" href="currency.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Stock Prices</h1>
+
+    <!-- Currency Selector -->
+    <label for="currencySelector">Choose Currency:</label>
+    <select id="currencySelector">
+      <option value="USD" selected>USD ($)</option>
+      <option value="EUR">EUR (€)</option>
+      <option value="INR">INR (₹)</option>
+      <option value="GBP">GBP (£)</option>
+      <option value="JPY">JPY (¥)</option>
+    </select>
+
+    <!-- Prices -->
+    <div class="stocks">
+      <div class="stock">
+        <span class="stock-name">AAPL:</span>
+        <span class="price" data-amount="175.20">$175.20</span>
+      </div>
+      <div class="stock">
+        <span class="stock-name">GOOGL:</span>
+        <span class="price" data-amount="2884.12">$2884.12</span>
+      </div>
+      <div class="stock">
+        <span class="stock-name">MSFT:</span>
+        <span class="price" data-amount="320.50">$320.50</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="currency.js"></script>
+</body>
+</html>

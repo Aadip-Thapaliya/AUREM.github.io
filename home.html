@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AUREUM | Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">AUREM</div>
+    <div class="nav-links">
+      <a href="home.html" class="active">Home</a>
+      <a href="market.html">Market</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="news.html">News</a>
+      <a href="settings.html">Settings</a>
+      <a href="currencyselector.html">Currency</a>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Welcome to AUREM</h1>
+    <p>Trade like a Titan. Track your portfolio. Stay informed with the latest market news.</p>
+    <a href="market.html" class="cta-button">Explore the Market</a>
+  </section>
+
+  <!-- Market Overview -->
+  <section class="market-overview">
+    <h2>Market Snapshot</h2>
+    <div class="market-cards">
+      <div class="market-card">
+        <h3>AAPL</h3>
+        <p class="price" data-price="175.20"></p>
+        <span class="positive">+1.12%</span>
+      </div>
+      <div class="market-card">
+        <h3>GOOGL</h3>
+        <p class="price" data-price="2884.12"></p>
+        <span class="negative">-0.45%</span>
+      </div>
+      <div class="market-card">
+        <h3>MSFT</h3>
+        <p class="price" data-price="320.50"></p>
+        <span class="positive">+0.89%</span>
+      </div>
+      <div class="market-card">
+        <h3>TSLA</h3>
+        <p class="price" data-price="780.30"></p>
+        <span class="positive">+2.45%</span>
+      </div>
+    </div>
+    <a href="market.html" class="see-more-link">See full market</a>
+  </section>
+
+  <!-- Portfolio Overview -->
+  <section class="portfolio-overview">
+    <h2>Your Portfolio</h2>
+    <div class="portfolio-card">
+      <p>Total Value: <strong id="portfolioValue" data-price="24500.00"></strong></p>
+      <p>Today's Change: <span class="positive">+2.14%</span></p>
+      <a href="portfolio.html" class="view-link">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- News Preview -->
+  <section class="news-preview">
+    <h2>Latest Market News</h2>
+    <div class="news-cards">
+      <div class="news-card">
+        <h3>Tech Stocks Rally Ahead of Earnings</h3>
+        <p>Major tech firms saw gains ahead of quarterly reports...</p>
+      </div>
+      <div class="news-card">
+        <h3>Federal Reserve Signals Rate Pause</h3>
+        <p>Markets react positively as Fed indicates a hold on rates...</p>
+      </div>
+      <div class="news-card">
+        <h3>EV Sector Surges on Subsidy News</h3>
+        <p>Tesla, Rivian, and others see double-digit gains...</p>
+      </div>
+    </div>
+    <a href="news.html" class="see-more-link">Read all news</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AUREM | All Rights Reserved</p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>

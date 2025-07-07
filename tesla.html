@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesla Inc. (TSLA) | Stock Details</title>
+  <link rel="stylesheet" href="stock.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="market.html">Market</a>
+    <a href="portfolio.html">Portfolio</a>
+  </nav>
+
+  <div class="stock-details-container">
+    <h1>Tesla Inc. (TSLA)</h1>
+    <p class="description">
+      Tesla Inc. designs, develops, manufactures, and sells electric vehicles, energy generation,
+      and storage systems. Its products include Model S, Model 3, Model X, Model Y, and more.
+    </p>
+
+    <div class="stock-meta">
+      <span id="price">Loading price...</span>
+      <span id="change"></span>
+    </div>
+
+    <div class="chart-buttons">
+      <button data-range="7">1W</button>
+      <button data-range="30">1M</button>
+      <button data-range="180">6M</button>
+      <button data-range="365">1Y</button>
+    </div>
+
+    <canvas id="stockChart"></canvas>
+  </div>
+
+  <script src="tesla.js"></script>
+</body>
+</html>
